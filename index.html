@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixPak Registration & Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Green Sliding Panel -->
+        <div class="green-panel" id="green-panel">
+            <div class="panel-content">
+                <h1>FixPak</h1>
+                <p>Your voice matters! FixPak empowers you to drive change in Pakistan by voting on issues that shape our future. Join a community of changemakers and make your voice count. Register now to be part of the solution!</p>
+                <button id="panel-button">Register</button>
+            </div>
+        </div>
+
+        <!-- Form Sections -->
+        <div class="form-container">
+            <!-- Registration Form -->
+            <div class="form-section" id="register-form">
+                <h1>Register as a Voter</h1>
+                <form>
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                    
+                    <label for="cnic">CNIC Number</label>
+                    <input type="text" id="cnic" name="cnic" placeholder="Enter your CNIC" required>
+                    
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required>
+                    
+                    <label for="mobile">Mobile Number</label>
+                    <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                    
+                    <label for="email">Email Address (Optional)</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                    
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required>
+                    
+                    <label for="province">Province</label>
+                    <select id="province" name="province" required>
+                        <option value="">Select your province</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Sindh">Sindh</option>
+                        <option value="KPK">Khyber Pakhtunkhwa</option>
+                        <option value="Balochistan">Balochistan</option>
+                    </select>
+                    
+   <div style="display: inline-flex; align-items: center; line-height: 1;">
+  <input type="checkbox" id="terms" style="margin: 0; padding: 0; width: auto; height: auto; vertical-align: middle;">
+  <label for="terms" style="margin: 10px; padding: 0; display: inline; vertical-align: middle;">I agree to the <a href="#">terms and conditions</a></label>
+</div>
+
+                    
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+
+            <!-- Login Form -->
+            <div class="form-section hidden" id="login-form">
+                <h2>Login to the Portal</h2>
+                <form>
+                    <label for="loginEmail">Email</label>
+                    <input type="email" id="loginEmail" name="loginEmail" placeholder="Enter your email" required>
+                    
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" name="loginPassword" placeholder="Enter your password" required>
+                    
+                    <a href="#">Forgot Password?</a>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
